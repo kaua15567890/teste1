@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Colégio Estadual Santo Agostinho</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #004d40; /* Cor de fundo da página (verde escuro) */
+            color: white; /* Cor do texto */
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            overflow-x: hidden;
+            overflow-y: auto;
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+        body::-webkit-scrollbar {
+            display: none;
+        }
+        header {
+            text-align: center;
+            background-color: #004d40; /* Cor do cabeçalho */
+            padding: 10px 0;
+        }
+        main {
+            flex: 1;
+            padding: 20px;
+            background-color: #004d40; /* Cor de fundo da seção principal */
+            border-radius: 8px;
+            margin: 20px;
+        }
+        .evento-detalhes {
+            padding: 20px;
+        }
+        .evento-detalhes img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+        .evento-detalhes p {
+            font-size: 1.2em;
+        }
+        .botao-voltar {
+            display: inline-block;
+            background-color: #004d40; /* Cor do botão */
+            color: white;
+            border: none;
+            border-radius: 8px;
+            padding: 8px 16px; /* Tamanho reduzido do botão */
+            cursor: pointer;
+            font-size: 14px; /* Tamanho da fonte reduzido */
+            transition: background-color 0.3s, transform 0.3s;
+            text-align: center;
+            margin-top: 20px;
+            text-decoration: none;
+        }
+        .botao-voltar:hover {
+            background-color: #005b50; /* Cor ao passar o mouse */
+            transform: scale(1.05);
+        }
+        footer {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1> Colégio Estadual Santo Agostinho</h1>
+    </header>
+    <main>
+        <section class="evento-detalhes">
+            <h2>Dia de Esportes</h2>
+            <img src="./imagens/Interclasse_00.jpeg" alt="Evento 1">
+            <p>O Interclasse no Colégio Santo Agostinho é um evento muito aguardado que promove a integração entre os alunos através de competições esportivas e culturais. Durante o evento, as turmas se dividem em equipes, incentivando a rivalidade saudável e o trabalho em equipe.</p>
+            
+            <img src="./imagens/Interclasse_01.jpeg" alt="Cultura 1">
+            <p>As atividades incluem uma variedade de esportes, como futebol, vôlei e basquete, além de apresentações artísticas, como danças e peças teatrais. Isso não só estimula a prática de esportes, mas também a criatividade e o espírito de colaboração.</p>
+            
+            <img src="./imagens/Interclasse_02.jpeg" alt="Cultura 2">
+            <p>O Interclasse é uma oportunidade para os alunos se divertirem, desenvolverem habilidades sociais e fortalecerem laços de amizade. Além disso, o evento é uma maneira de reforçar valores como respeito, disciplina e fair play. Ao final, a celebração das conquistas de todos, independentemente do resultado, cria um ambiente positivo e acolhedor na escola.</p>
+            
+            <img src="./imagens/Interclasse_03.jpeg" alt="Cultura 3">
+            <p>As competições são diversificadas, englobando esportes como futebol, vôlei e basquete, além de jogos de mesa e gincanas que incentivam a criatividade e o trabalho em equipe. O ambiente é vibrante, com os corredores e campos sempre cheios de energia, risadas e aplaudos, tornando cada partida uma verdadeira celebração.</p>
+            
+            <img src="./imagens/Interclasse_04.jpeg" alt="Cultura 4">
+            <p>O Interclasse é mais do que uma competição; é uma oportunidade para todos se unirem, celebrarem suas conquistas e cultivarem valores essenciais como respeito, solidariedade e fair play. Com certeza, é um dos momentos mais aguardados do ano letivo, que deixa uma marca especial na trajetória de cada aluno!</p>
+            
+            <a href="index.html" class="botao-voltar">Voltar para a Página Inicial</a>
+        </section>
+    </main>
+    <footer>
+        <!-- Rodapé oculto -->
+    </footer>
+</body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Colégio Estadual Santo Agostinho</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #004d40; /* Cor de fundo da página (verde escuro) */
+            color: white; /* Cor do texto */
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            overflow-x: hidden;
+            overflow-y: auto;
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+        body::-webkit-scrollbar {
+            display: none;
+        }
+        header {
+            text-align: center;
+            background-color: #004d40; /* Cor do cabeçalho */
+            padding: 10px 0;
+        }
+        main {
+            flex: 1;
+            padding: 20px;
+            background-color: #004d40; /* Cor de fundo da seção principal */
+            border-radius: 8px;
+            margin: 20px;
+        }
+        .evento-detalhes {
+            padding: 20px;
+        }
+        .evento-detalhes img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+        .evento-detalhes p {
+            font-size: 1.2em;
+        }
+        .botao-voltar {
+            display: inline-block;
+            background-color: #004d40; /* Cor do botão */
+            color: white;
+            border: none;
+            border-radius: 8px;
+            padding: 8px 16px; /* Tamanho reduzido do botão */
+            cursor: pointer;
+            font-size: 14px; /* Tamanho da fonte reduzido */
+            transition: background-color 0.3s, transform 0.3s;
+            text-align: center;
+            margin-top: 20px;
+            text-decoration: none;
+        }
+        .botao-voltar:hover {
+            background-color: #005b50; /* Cor ao passar o mouse */
+            transform: scale(1.05);
+        }
+        footer {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Promovendo a Cultura</h1>
+    </header>
+    <main>
+        <section class="evento-detalhes">
+            <h2>Descrição do Evento 1: Promovendo a Cultura</h2>
+            <img src="./imagens/Cultura_01.jpeg" alt="Evento 1">
+            <p>Este evento foi realizado no dia 15 de março, onde alunos e professores se reuniram para discutir temas importantes da educação e da cultura local. O evento incluiu palestras, workshops e apresentações artísticas.</p>
+            
+            <img src="./imagens/Cultura_04.jpeg" alt="Cultura 1">
+            <p>Os participantes tiveram a oportunidade de participar de diversas oficinas que promoviam a integração entre as diferentes culturas presentes na escola.</p>
+            
+            <img src="./imagens/Cultura_08.jpeg" alt="Cultura 2">
+            <p>Além das palestras, apresentações de dança e música foram realizadas, proporcionando um momento de celebração e alegria.</p>
+            
+            <img src="./imagens/Cultura_15.jpeg" alt="Cultura 3">
+            <p>Os alunos apresentaram trabalhos desenvolvidos durante o ano letivo, mostrando a importância da cultura na formação de suas identidades.</p>
+            
+            <img src="./imagens/Cultura_09.jpeg" alt="Cultura 4">
+            <p>A comunidade escolar se uniu para celebrar a diversidade e promover o respeito entre todos os participantes.</p>
+            
+            <a href="index.html" class="botao-voltar">Voltar para a Página Inicial</a>
+        </section>
+    </main>
+    <footer>
+        <!-- Rodapé oculto -->
+    </footer>
+</body>
+</html>

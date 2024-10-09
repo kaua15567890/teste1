@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Colégio Estadual Santo Agostinho</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #004d40; /* Cor de fundo da página (verde escuro) */
+            color: white; /* Cor do texto */
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            overflow-x: hidden;
+            overflow-y: auto;
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+        body::-webkit-scrollbar {
+            display: none;
+        }
+        header {
+            text-align: center;
+            background-color: #004d40; /* Cor do cabeçalho */
+            padding: 10px 0;
+        }
+        main {
+            flex: 1;
+            padding: 20px;
+            background-color: #004d40; /* Cor de fundo da seção principal */
+            border-radius: 8px;
+            margin: 20px;
+        }
+        .evento-detalhes {
+            padding: 20px;
+        }
+        .evento-detalhes img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+        .evento-detalhes p {
+            font-size: 1.2em;
+        }
+        .botao-voltar {
+            display: inline-block;
+            background-color: #004d40; /* Cor do botão */
+            color: white;
+            border: none;
+            border-radius: 8px;
+            padding: 8px 16px; /* Tamanho reduzido do botão */
+            cursor: pointer;
+            font-size: 14px; /* Tamanho da fonte reduzido */
+            transition: background-color 0.3s, transform 0.3s;
+            text-align: center;
+            margin-top: 20px;
+            text-decoration: none;
+        }
+        .botao-voltar:hover {
+            background-color: #005b50; /* Cor ao passar o mouse */
+            transform: scale(1.05);
+        }
+        footer {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1> Colégio Estadual Santo Agostinho</h1>
+    </header>
+    <main>
+        <section class="evento-detalhes">
+            <h2>Agosto Lilás</h2>
+            <img src="./imagens/Agostolilas_00.jpeg" alt="Evento 1">
+            <p>A palestra "Agosto Lilás" no Colégio Santo Agostinho foi um momento muito enriquecedor. Os especialistas compartilharam informações valiosas sobre a prevenção do câncer de mama, destacando a importância do autoexame e da mamografia. Os alunos participaram ativamente, fazendo perguntas e interagindo com os palestrantes.</p>
+            
+            <img src="./imagens/Agostolilas_01.jpeg" alt="Cultura 1">
+            <p>Além da parte informativa, houve um espaço para histórias inspiradoras de superação, o que ajudou a sensibilizar todos sobre a importância do tema. A iniciativa reforçou a necessidade de cuidar da saúde e promoveu um ambiente de apoio e conscientização na comunidade escolar. Se precisar de mais detalhes específicos, é só falar!</p>
+            
+            <img src="./imagens/Agostolilas_02.jpeg" alt="Cultura 2">
+            <p>Além das informações técnicas, o evento também incluiu relatos emocionantes de superação de mulheres que enfrentaram a doença. Essas histórias inspiradoras tocaram o coração de todos, lembrando a importância do apoio emocional e da conscientização coletiva na luta contra o câncer.</p>
+            
+            <img src="./imagens/Agostolilas_03.jpeg" alt="Cultura 3">
+            <p>No final, a palestra não apenas educou, mas também promoveu um clima de esperança e apoio, reafirmando o compromisso do Colégio Santo Agostinho com a saúde e o bem-estar de seus alunos e da comunidade. Com certeza, foi um passo importante na formação de cidadãos mais conscientes e solidários.</p>
+            
+            
+            <a href="index.html" class="botao-voltar">Voltar para a Página Inicial</a>
+        </section>
+    </main>
+    <footer>
+        <!-- Rodapé oculto -->
+    </footer>
+</body>
+</html>

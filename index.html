@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos do Colégio Estadual Santo Agostinho</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e0f7fa;
+            color: #004d40;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            overflow: auto; /* Permite rolar, mas não exibe a barra */
+            -ms-overflow-style: none; /* Para Internet Explorer e Edge */
+            scrollbar-width: none; /* Para Firefox */
+        }
+
+        body::-webkit-scrollbar {
+            display: none; /* Para Chrome, Safari e Opera */
+        }
+
+        header {
+            text-align: center;
+            background-color: #00796b;
+            color: white;
+            padding: 10px 0;
+        }
+        h1 {
+            margin: 10px 0;
+        }
+        h2 {
+            margin: 20px 0;
+            color: #00796b;
+        }
+        .eventos {
+            margin: 20px;
+        }
+        .descricao-evento {
+            border: 1px solid #004d40;
+            border-radius: 8px;
+            padding: 10px;
+            margin-bottom: 20px;
+            background-color: #b2dfdb;
+            transition: background-color 0.3s, transform 0.3s;
+            color: #004d40;
+            text-decoration: none;
+        }
+        .descricao-evento a {
+            color: #004d40;
+            text-decoration: none;
+            display: block;
+        }
+        .descricao-evento:hover {
+            background-color: #80cbc4;
+            transform: scale(1.02);
+        }
+        .galeria {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin: 20px;
+        }
+        .galeria .foto {
+            text-align: center;
+            margin: 10px;
+            border: 2px solid #00796b;
+            border-radius: 8px;
+            overflow: hidden;
+            width: 300px;
+            height: 200px;
+            background-color: #e0f7fa;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+        .galeria .foto:hover {
+            transform: scale(1.05);
+        }
+        .galeria .foto img {
+            width: 100%;
+            height: auto;
+            transition: transform 0.3s ease;
+        }
+        .galeria .foto:hover img {
+            transform: scale(1.1);
+        }
+        .texto-informativo {
+            margin: 20px;
+            padding: 10px;
+            background-color: #b2dfdb;
+            border-radius: 8px;
+        }
+        .texto-informativo ul {
+            margin-top: 10px;
+            padding-left: 20px;
+        }
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.9);
+            padding-top: 60px;
+        }
+        .modal-content {
+            margin: auto;
+            display: block;
+            width: 80%;
+            max-width: 700px;
+            animation: zoom 5s infinite alternate;
+        }
+        @keyframes zoom {
+            0% { transform: scale(1); }
+            100% { transform: scale(1.1); }
+        }
+        .video-container {
+            margin: 20px;
+            padding: 10px;
+            background-color: #b2dfdb;
+            border-radius: 8px;
+            text-align: center;
+        }
+        .video-container h2 {
+            color: #00796b;
+        }
+        .video-button {
+            background-color: #00796b;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+        .video-button:hover {
+            background-color: #004d40;
+        }
+        .topico {
+            margin-bottom: 20px; /* Espaçamento entre tópicos */
+            padding: 10px;
+            border-left: 5px solid #00796b; /* Linha à esquerda para destaque */
+            background-color: #b2dfdb; /* Cor de fundo dos tópicos */
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Eventos do Colégio Estadual Santo Agostinho</h1>
+    </header>
+
+    <main>
+        <audio autoplay loop>
+            <source src="caminho/para/sua-musica.mp3" type="audio/mpeg">
+            Seu navegador não suporta o elemento de áudio.
+        </audio>
+
+        <section class="eventos">
+            <h2>Nossos Eventos</h2>
+            <div class="descricao-evento">
+                <a href="evento1.html">Descrição do Evento 1: Promovendo a Cultura</a>
+            </div>
+            <div class="descricao-evento">
+                <a href="evento2.html">Descrição do Evento 2: Agosto Lilás</a>
+            </div>
+            <div class="descricao-evento">
+                <a href="evento3.html">Descrição do Evento 3: Dia de Esportes</a>
+            </div>
+            <div class="descricao-evento">
+                <a href="evento4.html">Descrição do Evento 4: Páscoa</a>
+            </div>
+        </section>
+
+        <section class="galeria">
+            <h2>Algumas de Muitas Imagens</h2>
+            <div class="foto" onclick="openModal(this)">
+                <img src="./imagens/Páscoa_00.jpeg" alt="Evento 1">
+            </div>
+            <div class="foto" onclick="openModal(this)">
+                <img src="./imagens/Acolhimento_00.jpeg" alt="Evento 2">
+            </div>
+            <div class="foto" onclick="openModal(this)">
+                <img src="./imagens/Acolhimento_02.jpeg" alt="Evento 3">
+            </div>
+            <div class="foto" onclick="openModal(this)">
+                <img src="./imagens/Talentos_01.jpeg" alt="Evento 4">
+            </div>
+        </section>
+
+        <section class="texto-informativo">
+            <h2>Informações Adicionais</h2>
+            <p>
+                As festas do <strong style="color: #00796b;">Colégio Estadual Santo Agostinho</strong> são eventos que celebram a cultura e a integração da comunidade escolar. Cada festividade é uma oportunidade para alunos e professores se unirem, promovendo a colaboração e a amizade.
+            </p>
+            <p>
+                <strong>Destaques das Festas:</strong>
+                <ul>
+                    <li class="topico">
+                        <strong style="color: #00796b;">Festa Junina:</strong> A Festa Junina é uma das celebrações mais aguardadas e tradicionais do Brasil, ocorrendo durante o mês de junho em homenagem a três santos: Santo Antônio, São João e São Pedro. Essa festividade, que tem raízes nas celebrações europeias, especialmente nas festas pagãs de verão, foi incorporada à cultura brasileira, resultando em uma festa cheia de cores, sons e sabores.
+                        <ul>
+                            <li><strong>Pamonha:</strong> Feita de milho, a pamonha é uma iguaria que pode ser servida doce ou salgada. Envolvida em folhas de milho, sua preparação remete às tradições dos antigos festeiros que colhiam milho nas plantações.</li>
+                            <li><strong>Canjica:</strong> Outro destaque da festa, a canjica é um doce feito com milho, leite, açúcar e especiarias, sendo frequentemente servido quente e polvilhado com canela. Seu sabor reconfortante é ideal para as noites frias de junho.</li>
+                            <li><strong>Bolo de Milho:</strong> Feito com a base do milho, esse bolo é um clássico nas festas juninas. A sua textura macia e o sabor adocicado fazem dele um acompanhamento perfeito para um café quente.</li>
+                        </ul>
+                    </li>
+                    <li class="topico">
+                        <strong style="color: #00796b;">Festival de Música:</strong> O Festival de Música do Colégio Estadual Santo Agostinho é uma celebração vibrante e emocionante que reúne alunos de diferentes idades para demonstrar seus talentos musicais. Este evento, que se tornou um dos favoritos da comunidade escolar, oferece uma plataforma onde jovens artistas podem se expressar e brilhar, criando memórias inesquecíveis e fortalecendo laços entre os participantes.
+                    </li>
+                    <li class="topico">
+                        <strong style="color: #00796b;">Dia das Mães e Dia dos Pais:</strong> Os dias dedicados às mães e aos pais no Colégio Estadual Santo Agostinho são ocasiões especiais que transcendem o simples reconhecimento de cada figura parental. Essas festividades são verdadeiros tributos ao amor, à dedicação e ao papel fundamental que os familiares desempenham na vida dos alunos. Com uma programação repleta de atividades e apresentações, o colégio transforma essas datas em momentos memoráveis e emocionantes.
+                    </li>
+                </ul>
+            </p>
+        </section>
+
+        <section class="video-container">
+            <h2>Para mais Experiência, veja meu Site, ouvindo essa música</h2>
+            <button class="video-button" onclick="window.open('https://www.youtube.com/watch?v=bc0KhhjJP98', '_blank')">Acesse Nosso Canal no YouTube</button>
+        </section>
+    </main>
+
+    <script>
+        function openModal(element) {
+            const modal = document.createElement('div');
+            modal.classList.add('modal');
+            modal.innerHTML = `
+                <img class="modal-content" src="${element.querySelector('img').src}" alt="Evento">
+            `;
+            document.body.appendChild(modal);
+            modal.style.display = "block";
+
+            // Adiciona um evento para fechar o modal quando a tecla "Esc" for pressionada
+            window.addEventListener('keydown', function(event) {
+                if (event.key === 'Escape') {
+                    modal.style.display = 'none';
+                    document.body.removeChild(modal); // Remove o modal do DOM
+                }
+            });
+
+            // Adiciona um evento para fechar o modal ao clicar fora da imagem
+            modal.addEventListener('click', function() {
+                modal.style.display = 'none';
+                document.body.removeChild(modal);
+            });
+        }
+    </script>
+</body>
+</html>

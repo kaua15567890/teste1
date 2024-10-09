@@ -1,0 +1,524 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e0f7fa; /* Azul claro */
+    color: #000; /* Preto */
+    margin: 0;
+    padding: 0;
+}
+
+header, footer {
+    background-color: #004d40; /* Verde escuro */
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+h1, h2 {
+    margin: 0;
+}
+
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.foto {
+    margin: 10px;
+    text-align: center;
+}
+
+.foto img {
+    max-width: 100%;
+    height: auto;
+    border: 2px solid #004d40; /* Verde escuro */
+}
+
+.ver-mais {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color: #00796b; /* Verde */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.ver-mais:hover {
+    background-color: #004d40; /* Verde escuro */
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e0f7fa; /* Azul claro */
+    color: #000; /* Preto */
+    margin: 0;
+    padding: 0;
+}
+
+header, footer {
+    background-color: #004d40; /* Verde escuro */
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+h1, h2 {
+    margin: 0;
+}
+
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.foto {
+    margin: 10px;
+    text-align: center;
+}
+
+.foto p {
+    margin: 0;
+    padding: 10px;
+    background-color: #00796b; /* Verde */
+    color: white;
+    border-radius: 5px;
+    transition: opacity 0.3s ease; /* Transição suave */
+}
+
+.foto a {
+    text-decoration: none; /* Remove underline do link */
+}
+
+.foto p:hover {
+    opacity: 0.7; /* Efeito de desvanecimento ao passar o mouse */
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e0f7fa; /* Azul claro */
+    color: #000; /* Preto */
+    margin: 0;
+    padding: 0;
+}
+
+header, footer {
+    background-color: #004d40; /* Verde escuro */
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+h1, h2 {
+    margin: 0;
+}
+
+.evento-detalhes {
+    text-align: center; /* Centraliza o texto na seção de detalhes */
+    margin: 20px;
+}
+
+.evento-detalhes img {
+    max-width: 80%; /* Ajusta a largura da imagem */
+    height: auto; /* Mantém a proporção da imagem */
+    border: 2px solid #004d40; /* Borda para a imagem */
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e0f7fa; /* Azul claro */
+    color: #000; /* Preto */
+    margin: 0;
+    padding: 0;
+}
+
+header, footer {
+    background-color: #004d40; /* Verde escuro */
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+h1, h2 {
+    margin: 0;
+}
+
+h2 {
+    text-align: center; /* Centraliza o título "Nossos Eventos" */
+    margin: 20px 0; /* Espaçamento acima e abaixo do título */
+}
+
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.foto {
+    margin: 10px;
+    text-align: center;
+}
+
+.foto p {
+    margin: 0;
+    padding: 10px;
+    background-color: #00796b; /* Verde */
+    color: white;
+    border-radius: 5px;
+    transition: opacity 0.3s ease; /* Transição suave */
+}
+
+.foto a {
+    text-decoration: none; /* Remove underline do link */
+}
+
+.foto p:hover {
+    opacity: 0.7; /* Efeito de desvanecimento ao passar o mouse */
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e0f7fa; /* Azul claro */
+    color: #000; /* Preto */
+    margin: 0;
+    padding: 0;
+}
+
+header, footer {
+    background-color: #004d40; /* Verde escuro */
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+h1, h2 {
+    margin: 0;
+}
+
+.evento-detalhes {
+    text-align: center; /* Centraliza o texto na seção de detalhes */
+    margin: 20px;
+}
+
+.evento-detalhes img {
+    max-width: 80%; /* Ajusta a largura da imagem */
+    height: auto; /* Mantém a proporção da imagem */
+    border: 2px solid #004d40; /* Borda para a imagem */
+}
+
+.voltar {
+    display: inline-block; /* Para que o padding e margin funcionem corretamente */
+    margin-top: 20px; /* Espaço acima do link */
+    padding: 10px 20px; /* Espaçamento interno do link */
+    background-color: #00796b; /* Verde */
+    color: white;
+    text-decoration: none; /* Remove underline do link */
+    border-radius: 5px; /* Bordas arredondadas */
+    transition: opacity 0.3s ease; /* Transição suave */
+}
+
+.voltar:hover {
+    opacity: 0.7; /* Efeito de desvanecimento ao passar o mouse */
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e0f7fa; /* Azul claro */
+    color: #004d40; /* Texto em um tom escuro */
+    margin: 0; /* Remove a margem padrão do body */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Altura mínima para o corpo */
+}
+header {
+    text-align: center;
+    background-color: #00796b; /* Azul escuro */
+    color: white;
+    padding: 10px 0;
+}
+h1 {
+    margin: 10px 0;
+}
+h2 {
+    margin: 20px 0; /* Margem para o título */
+}
+.eventos {
+    margin: 20px;
+}
+.descricao-evento {
+    border: 1px solid #004d40;
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #b2dfdb; /* Cor de fundo */
+    transition: background-color 0.3s, transform 0.3s;
+    color: #004d40; /* Cor do texto padrão */
+    text-decoration: none; /* Remove o sublinhado do link */
+}
+.descricao-evento a {
+    color: #004d40; /* Cor do texto do link */
+    text-decoration: none; /* Remove o sublinhado do link */
+    display: block; /* Faz o link ocupar toda a largura do bloco */
+}
+.descricao-evento:hover {
+    background-color: #80cbc4; /* Cor de destaque ao passar o mouse */
+    transform: scale(1.02); /* Leve aumento ao passar o mouse */
+}
+.galeria {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+.galeria .foto {
+    text-align: center;
+    margin: 10px;
+    border: 2px solid #00796b;
+    border-radius: 8px;
+    overflow: hidden;
+    width: 300px; /* largura da imagem */
+    height: 200px; /* altura da imagem */
+    background-color: #e0f7fa; /* cor de fundo */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Para empilhar as imagens */
+    cursor: pointer; /* Cursor para indicar que é clicável */
+}
+.foto img {
+    width: 100%; /* Ajusta a imagem para caber no contêiner */
+    height: auto; /* Mantém a proporção */
+    transition: transform 0.3s; /* Transição suave para a imagem */
+}
+.modal {
+    display: none; /* Escondido por padrão */
+    position: fixed; /* Fica na tela inteira */
+    z-index: 1; /* Fica acima de outros elementos */
+    left: 0;
+    top: 0;
+    width: 100%; /* Largura da tela */
+    height: 100%; /* Altura da tela */
+    overflow: auto; /* Permite rolagem se necessário */
+    background-color: rgba(0, 0, 0, 0.8); /* Fundo escuro */
+}
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%; /* Ajuste o tamanho da imagem no modal */
+    max-width: 700px; /* Tamanho máximo da imagem */
+}
+.close {
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    color: white;
+    font-size: 35px;
+    font-weight: bold;
+    cursor: pointer; /* Cursor para indicar que é clicável */
+}
+footer {
+    background-color: #00796b; /* Azul escuro */
+    color: white; /* Texto branco */
+    text-align: center;
+    padding: 10px 0; /* Espaçamento do rodapé */
+    margin-top: auto; /* Faz o rodapé ficar no final da página */
+}
+
+.texto-informativo ul {
+    margin-top: 10px; /* Ajusta o espaço acima da lista */
+    padding-left: 20px; /* Indentação para a lista */
+}
+
+.texto-informativo li {
+    margin-bottom: 10px; /* Espaço entre os itens da lista */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #00796b; /* Cor de fundo da tela inteira */
+    color: #ffffff; /* Cor do texto em branco para melhor contraste */
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.eventos {
+    margin: 20px;
+}
+
+.descricao-evento {
+    border: 1px solid #004d40;
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 20px;
+    background-color: #b2dfdb; /* Fundo dos eventos */
+    transition: background-color 0.3s, transform 0.3s;
+    color: #004d40; /* Cor do texto dos eventos */
+}
+
+html, body {
+    overflow-x: hidden; /* Remove a barra de rolagem horizontal */
+}
+
+html, body {
+    overflow-x: hidden; /* Remove a barra de rolagem horizontal */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #00796b; /* Cor de fundo da tela inteira */
+    color: #ffffff; /* Cor do texto em branco para melhor contraste */
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* O restante do seu CSS continua aqui... */
+html, body {
+    overflow-x: hidden; /* Remove a barra de rolagem horizontal */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #00796b; /* Cor de fundo da tela inteira */
+    color: #ffffff; /* Cor do texto em branco para melhor contraste */
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    box-sizing: border-box; /* Inclui padding e border no cálculo da largura */
+}
+
+* {
+    box-sizing: inherit; /* Aplica box-sizing a todos os elementos */
+}
+
+.galeria {
+    display: flex;
+    justify-content: center; /* Centraliza as fotos na galeria */
+    flex-wrap: wrap;
+    margin: 20px auto; /* Centraliza a galeria e remove margens laterais */
+    max-width: 100%; /* Impede que a galeria exceda a largura da tela */
+}
+
+.galeria .foto {
+    text-align: center;
+    margin: 10px;
+    border: 2px solid #ffffff; /* Mudou a cor da borda para melhor contraste */
+    border-radius: 8px;
+    overflow: hidden;
+    width: 300px;
+    height: 200px;
+    background-color: #e0f7fa;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #004d40;
+    color: white;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+body::-webkit-scrollbar {
+    display: none;
+}
+header {
+    text-align: center;
+    background-color: #004d40;
+    padding: 10px 0;
+}
+header h1, .evento-detalhes h2 {
+    width: fit-content; /* Ajusta a largura para o conteúdo */
+    margin: 0 auto; /* Centraliza horizontalmente */
+    padding: 5px; /* Padding reduzido */
+    border-radius: 5px; /* Cantos arredondados, se desejar */
+}
+header h1:hover, .evento-detalhes h2:hover {
+    transform: scale(1.05); /* Aumenta um pouco o tamanho */
+    transition: transform 0.3s; /* Tempo da animação */
+}
+main {
+    flex: 1;
+    padding: 20px;
+    background-color: #004d40;
+    border-radius: 8px;
+    margin: 20px;
+}
+.evento-detalhes {
+    padding: 20px;
+}
+.evento-detalhes img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+.evento-detalhes p {
+    font-size: 1.2em;
+}
+.botao-voltar {
+    display: inline-block;
+    background-color: #004d40;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 8px 16px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s, transform 0.3s;
+    text-align: center;
+    margin-top: 20px;
+    text-decoration: none;
+}
+.botao-voltar:hover {
+    background-color: #005b50;
+    transform: scale(1.05);
+}
+footer {
+    display: none;
+}
